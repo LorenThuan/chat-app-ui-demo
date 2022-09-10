@@ -1,9 +1,12 @@
+/* old */
 .main__chatcontent {
     flex-grow: 1;
     padding: 20px 40px;
     max-width: 63%;
     border-right: 1px solid #ebe7fb;
   }
+
+
   .content__header {
     padding-bottom: 15px;
     border-bottom: 1px solid #ebe7fb;
@@ -135,13 +138,38 @@
   }
   .sendNewMessage input {
     flex-grow: 1;
-    padding: 0 15px;
+    // padding: 0 15px;
     background-color: transparent;
-    border: none;
-    outline: none;
+    // border: none;
+    // outline: none;
+
   }
   #sendMsgBtn {
     background-color: #3b5bfe;
     color: #fff;
   }
-  
+  .btnIconEditName {
+      display: none;
+  }
+.tim__hover {
+  -webkit-touch-callout: none;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+}
+
+  .tim__hover:hover + .btnIconEditName {
+    display: block;
+  }
+
+.none__Copy {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+

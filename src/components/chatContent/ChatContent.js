@@ -1,7 +1,14 @@
 import React, { Component, useState, createRef, useEffect } from "react";
-import "./chatContent.css";
+import "./chatContent.scss";
 import Avatar from "../chatList/Avatar";
 import ChatItem from "./ChatItem";
+import IconEditName from './../../images/pencil.png';
+import IconGroup from './../../images/group.png';
+import IconSearch from './../../images/magnifying-glass (1).png';
+import IconVideoCamera from './../../images/video-camera.png';
+import IconBar from './../../images/bar.png';
+import IconEmoji from './../../images/happy.png';
+import IconLike from './../../images/like.png';
 
 export default class ChatContent extends Component {
   messagesEndRef = createRef(null);
@@ -102,14 +109,42 @@ export default class ChatContent extends Component {
                 isOnline="active"
                 image="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTA78Na63ws7B7EAWYgTr9BxhX_Z8oLa1nvOA&usqp=CAU"
               />
-              <p>Tim Hover</p>
+              <div>
+                <div>
+                  <div>
+                  <p className="tim__hover ">Tim Hover </p>
+                  <button className="btn-nobg btnIconEditName"><img src={IconEditName}></img></button>
+                  </div>
+                 
+               
+                
+                <br/>
+               <div className="none__Copy">
+               Truy cập 8 giờ trước
+                </div>
+                </div>
+              </div>
+            
+              
             </div>
           </div>
 
           <div className="blocks">
             <div className="settings">
               <button className="btn-nobg">
-                <i className="fa fa-cog"></i>
+                <img src={IconGroup}></img>
+              </button>
+
+              <button className="btn-nobg icon__search">
+                <img src={IconSearch}></img>
+              </button>
+
+              <button className="btn-nobg">
+                <img src={IconVideoCamera}></img>
+              </button>
+
+              <button className="btn-nobg">
+                <img src={IconBar}></img>
               </button>
             </div>
           </div>
@@ -132,18 +167,20 @@ export default class ChatContent extends Component {
         </div>
         <div className="content__footer">
           <div className="sendNewMessage">
-            <button className="addFiles">
-              <i className="fa fa-plus"></i>
-            </button>
+           
             <input
               type="text"
-              placeholder="Type a message here"
+              placeholder="Nhập @, tin nhắn tới Tim Hover"
               onChange={this.onStateChange}
               value={this.state.msg}
             />
-            <button className="btnSendMsg" id="sendMsgBtn">
-              <i className="fa fa-paper-plane"></i>
-            </button>
+           <button className="btn-nobg">
+                <img src={IconEmoji}></img>
+              </button>
+
+              <button className="btn-nobg">
+                <img src={IconLike}></img>
+              </button> 
           </div>
         </div>
       </div>

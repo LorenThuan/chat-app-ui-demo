@@ -1,0 +1,20 @@
+/* old */
+.main__chatcontent {
+    flex-grow: 1;
+    padding: 20px 40px;
+    max-width: 70%;
+    border-right: 1px solid #ebe7fb;
+  }
+  /* update */
+  .content__header {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ebe7fb;
+  }
+  .content__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+ 
+
+  

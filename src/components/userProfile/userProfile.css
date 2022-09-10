@@ -4,6 +4,7 @@
     transition: all 0.3s ease-in-out;
     overflow: hidden;
     position: relative;
+    background-color: #fff;
   }
   .profile__card {
     background-color: #fff;
@@ -90,4 +91,14 @@
   .profile__card.open .card__header i:before {
     content: "\f106";
   }
-  
+  .infoHoiThoai,.info__Name {
+   text-align: center;
+   font-weight: bold;
+   font-size: 18px;
+   -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   -o-user-select: none;
+   user-select: none;
+  }
